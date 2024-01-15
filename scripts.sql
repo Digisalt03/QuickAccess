@@ -40,3 +40,17 @@ where			m.intSectionRowFieldMapID in
 											) 
 
 /* ================= END - Get All fields based on section/card name =================*/
+
+
+/*Get field mapping details based on stepid*/
+DECLARE @StepName NVARCHAR(MAX) = 'Que'
+
+DECLARE @formStepID INT = (select top 1 intFormStepId from mstFormSteps where vcName like '%'+@StepName+'%' and dtCreateDate is not null and intFormSeriesId = 4) 
+select	* 
+from	tblSectionRowFieldMappings 
+where	intSeriesID = 4 
+and		intStepID = @formStepID 
+and		dtCreateDate is not null
+
+
+
