@@ -62,3 +62,9 @@ update mstFormFields set vcFieldType = 'title-name', vcOptions = '[{"label":"Mr.
 98)
 
 
+
+/* delete record from mapping table */
+delete from tblSectionRowFieldMappings where intSectionRowFieldMapID = 1215
+
+
+
