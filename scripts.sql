@@ -54,3 +54,11 @@ and		dtCreateDate is not null
 
 
 
+
+/* Update fields by field id from master fields tables */
+update mstFormFields set vcFieldType = 'title-name', vcOptions = '[{"label":"Mr.","value":"Mr."},{"label":"Mrs.","value":"Mrs."},{"label":"Dr.","value":"Dr."},{"label":"Er.","value":"Er."}]' where intFormFieldId in (
+11,
+73,
+98)
+
+
