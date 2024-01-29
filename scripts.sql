@@ -68,3 +68,38 @@ delete from tblSectionRowFieldMappings where intSectionRowFieldMapID = 1215
 
 
 
+
+-- Turn on identity insert for the table
+SET IDENTITY_INSERT tblSectionRowFieldMappings ON;
+
+--insert
+-- Turn off identity insert for the table
+SET IDENTITY_INSERT tblSectionRowFieldMappings OFF;
+
+
+SELECT		m.intSectionRowFieldMapID,
+			m.intReflexQuestionTypeId,
+			m.intSectionRowMapID,
+			m.btVisible,
+			m.vcMappingType,
+			m.vcSectionRowLabel,
+			m.vcMoreInfo,
+			m.intFormFieldId,
+			f.vcFieldName,
+			f.vcFieldLabel,
+			m.intPositionDesktop,
+			m.intPositionTablet,
+			m.intPositionMobile,
+			m.vcValidations,
+			m.vcDependentOn
+FROM		tblSectionRowFieldMappings m
+left join	mstFormFields f
+ON			m.intFormFieldId = f.intFormFieldId
+WHERE		m.intStepID = 24 and m.intSeriesID = 4 
+ORDER BY	m.intSectionRowFieldMapID
+
+
+
+
+
+
