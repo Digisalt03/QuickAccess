@@ -99,6 +99,10 @@ WHERE		m.intStepID = 24 and m.intSeriesID = 4
 ORDER BY	m.intSectionRowFieldMapID
 
 
+select * from tblPF_HealthConditions where vcApplicationNumber = 'K00000023'
+select * from tblPF_HealthConditionsDetails where vcApplicationNumber = 'K00000023'
+
+
 
 
 
