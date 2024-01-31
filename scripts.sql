@@ -104,6 +104,14 @@ select * from tblPF_HealthConditionsDetails where vcApplicationNumber = 'K000000
 
 
 
+/* Get all the the table names from database */
+USE [OnboardingMaster]
+SELECT table_name = t.name
+FROM sys.tables t
+ORDER BY t.name;
+
+
+
 
 
 
