@@ -13,3 +13,6 @@ entity.Property(e => e.intApplicationStatus)
 }
 
 
+//datetime handling
+(Guard.IsNotNull(item.FirstDiagnosis!))?SharedFunction.ParseDate(item.FirstDiagnosis!):null )!,
+
