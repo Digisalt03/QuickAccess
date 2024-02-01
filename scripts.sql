@@ -137,6 +137,26 @@ select	btHadCriminalRecord,
 from	tblPF_OtherDetails
 
 
+/* lifestyle */
+select	btCovid19,
+		btConsumeTobacco,
+		btconsumeAlcohol,
+		vcConsumeNarcotics,
+		bthazardousHobbiesSports,
+		vcOwnAsset,
+		dtAdmission,
+		dtDischarge,
+		btIcuRequirement,
+		vcComplicationDetails,
+		btIscomplicationSuffered,
+		intHardLiquorPerWeek,
+		intBeerBottlesPerWeek,
+		intWineGlassPerWeek,
+		vcNameOfDrug,
+		vcHobbiesOrSportsRisk
+from	tblPF_LifeStyleDetails 
+where	vcApplicationNumber = 'K00000057'
+
 
 
 
