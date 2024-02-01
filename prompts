@@ -2,3 +2,5 @@ remove prefixes "vc", "bit", "dt", "bt", "int", "ch", "dc", "ft" from the follow
 
 
 Give me list of property name of following properties - 
+
+suggest better variable name - ProposalEntireData
