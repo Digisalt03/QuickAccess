@@ -112,6 +112,33 @@ ORDER BY t.name;
 
 
 
+/* Fatca Details */
+select	btFatca,
+		vcInsurerOrApplicationNumber,
+		vcAddressJurisdiction,
+		vcTaxIdentificationNumber,
+		vcValidityOfDocumentaryEvidence
+from	tblPF_OtherDetails
+
+
+/* Other la */
+select	btHadCriminalRecord,
+		btIsPoliticalAssociated,
+		btIsWithPoliticalParty,
+		vcInsurerNumber,
+		vcToBeInsured,
+		vcDeathSumAssured,
+		vcPremiumPerAnnum,
+		dtMonthAndYearOfInssuance,
+		vcAcceptanceTerm,
+		vcCurrentStatus,
+		vcOffenceDetails,
+		vcPoliticalAssociationDetails
+from	tblPF_OtherDetails
+
+
+
+
 
 
 
