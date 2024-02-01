@@ -158,6 +158,32 @@ from	tblPF_LifeStyleDetails
 where	vcApplicationNumber = 'K00000057'
 
 
+/* form 60 */
+select	btAppliedForPan,
+		vcIdentityDocument,
+		vcIdentityDocumentCode,
+		vcIdentityDocumentNumber,
+		vcDocumentAddressLine1,
+		vcDocumentAddressLine2,
+		vcDocumentCountry,
+		vcDocumentState,
+		vcDocumentCity,
+		vcDocumentPincode,
+		vcSupportOfAddressDocument,
+		vcSupportOfAddressDocumentCode,
+		vcSupportOfAddressIdentificationNumber,
+		vcIssuingDocumentAddressLine1,
+		vcIssuingDocumentAddressLine2,
+		vcIssuingDocumentCountry,
+		vcIssuingDocumentState,
+		vcIssuingDocumentCity,
+		vcIssuingDocumentPincode
+from	tblPF_Form60Questions 
+where	vcApplicationNumber = 'K00000057'
+
+
+
+
 
 
 
