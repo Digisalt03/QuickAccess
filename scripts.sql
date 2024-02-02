@@ -182,7 +182,12 @@ from	tblPF_Form60Questions
 where	vcApplicationNumber = 'K00000057'
 
 
-
+/* Check reflexive fields by type id */
+select	intReflexQuestionTypeId,* 
+from	tblSectionRowFieldMappings  
+where	intSeriesID is null 
+and		intStepID is null 
+and		intReflexQuestionTypeId = 24
 
 
 
