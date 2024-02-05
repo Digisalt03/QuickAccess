@@ -111,6 +111,13 @@ FROM sys.tables t
 ORDER BY t.name;
 
 
+/* Get information by application number */
+declare @appNumber NVARCHAR(100) = 'K00000094'
+select * from tblPF_PersonalDetails where vcApplicationNumber = @appNumber
+select * from tblPF_CommunicationDetails where vcApplicationNumber = @appNumber
+
+
+
 
 /* Fatca Details */
 select	btFatca,
