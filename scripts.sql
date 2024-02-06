@@ -198,5 +198,17 @@ and		intReflexQuestionTypeId = 24
 
 
 
+/* Remove summery declaration by application number */
+UPDATE	tblPF_Applications 
+SET		btVerifiedFormSubmission = 0, 
+		dtVerifiedFormSubmissionOn = null,
+		intApplicationStatus = 0,
+		intCompleteStatus = 0,
+		intFormStepNo = 5
+WHERE	vcApplicationNumber = 'K00000101'
+
+
+
+
 
 
