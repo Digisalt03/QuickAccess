@@ -220,7 +220,15 @@ where		m.intSectionRowMapID = 139
 order by	m.intPositionDesktop asc
 
 
+/* Update validation by id */
+update tblSectionRowFieldMappings set vcValidations = 'REQ, DREQ' where intSectionRowFieldMapID = 2383
 
+/* Get validation by ids */
+select intSectionRowFieldMapID,vcValidations from tblSectionRowFieldMappings where intSectionRowFieldMapID in(
+128,
+129,
+2383
+)
 
 
 
