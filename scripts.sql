@@ -239,4 +239,11 @@ AND		vcDependentOn is not null
 /* delete scr details by app number */
 select* from tblPF_ScrDetails where vcApplicationNumber = 'K00000101'
 
+/* Get application number which stage completed upto nominee details */
+select	* 
+from	tblPF_Applications 
+where	intFormStepNo  = 4
+and		intCompleteStatus = 0 
+and		intPaymentStatus = 0
+
 
