@@ -236,4 +236,7 @@ FROM	tblSectionRowFieldMappings
 WHERE	intReflexQuestionTypeID = 2
 AND		vcDependentOn is not null
 
+/* delete scr details by app number */
+select* from tblPF_ScrDetails where vcApplicationNumber = 'K00000101'
+
 
