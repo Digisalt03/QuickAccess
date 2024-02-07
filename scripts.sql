@@ -208,6 +208,18 @@ SET		btVerifiedFormSubmission = 0,
 WHERE	vcApplicationNumber = 'K00000101'
 
 
+/* Get fields by row id */
+select		m.intSectionRowFieldMapID,
+			f.vcFieldName,
+			f.vcFieldLabel,
+			m.intPositionDesktop
+FROM		tblSectionRowFieldMappings m
+left join	mstFormFields f
+ON			m.intFormFieldId = f.intFormFieldId
+where		m.intSectionRowMapID = 139
+order by	m.intPositionDesktop asc
+
+
 
 
 
