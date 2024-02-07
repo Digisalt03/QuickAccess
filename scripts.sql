@@ -230,5 +230,10 @@ select intSectionRowFieldMapID,vcValidations from tblSectionRowFieldMappings whe
 2383
 )
 
+/* Get dependent record by questionnaire id */
+SELECT	vcDependentOn,* 
+FROM	tblSectionRowFieldMappings 
+WHERE	intReflexQuestionTypeID = 2
+AND		vcDependentOn is not null
 
 
