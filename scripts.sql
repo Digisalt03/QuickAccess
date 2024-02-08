@@ -247,3 +247,11 @@ and		intCompleteStatus = 0
 and		intPaymentStatus = 0
 
 
+/* Family and nominee scenarios */
+select btIsNominee,* from tblPF_FamilyDetails where vcApplicationNumber = 'K00000117'
+select dtDOB,vcMobileNumber, ftNomineePercentage,* from tblPF_NomineeDetails where vcApplicationNumber = 'K00000117' 
+
+
+
+
+
