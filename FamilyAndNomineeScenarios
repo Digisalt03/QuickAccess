@@ -1,0 +1,45 @@
+SC1 -  [DONE]
+On the Family details step, the number of nominees added 
+THEN 
+the number of nominees should be displayed in the nominee step
+------------------------------------------------------------------------------
+SC2 - [Done]
+On the Nominee details step, the number of nominees updated 
+THEN 
+the number of nominees should be displayed in the nominee step
+------------------------------------------------------------------------------
+SC3 - [Done]
+On the Family details step, the number of nominees checked record updated 
+THEN 
+the number of nominees should be displayed in the nominee step
+------------------------------------------------------------------------------
+SC4 - [Done]
+On the family details, If the nominee object is removed THEN those field should be remove from nominee details 
+------------------------------------------------------------------------------
+SC5 - [Done]
+On the nominee details, If the existing nominee object which is not belongs to family details then that object should be update.
+------------------------------------------------------------------------------
+SC6 - [Done]
+On the nominee details, If the existing object which is also belongs to family object is removed then those object also unchecked from family details
+------------------------------------------------------------------------------
+SC7 - [Done]
+On the Family details step, if the father or mother field is update then those fields only should be update without affected other fields.
+-----------------------------------------------------------------------------
+SC8 - [Done]
+Family Details - two brother
+one brother upddate then exactly that family should be update
+-----------------------------------------------------------------------------
+SC9 [Done]
+Family Details - two brother and same as nominee
+one brother uncheck then exactly that nominee should be delete
+-----------------------------------------------------------------------------
+SC10 [Done]
+
+Family Details - one relation same as nominee
+nominee delete then --> unchecked from family details
+-----------------------------------------------------------------------------
+SC11 [Done]
+
+Family Details - One relation same as nominee and percentage and mobile number entered
+then --> On family detail that that record is updated then thier percentage and mobile number should not update
+-----------------------------------------------------------------------------
